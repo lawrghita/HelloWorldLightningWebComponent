@@ -1,5 +1,5 @@
-# MY OBSERVATIONS:
-
+# MY OBSERVATIONS :
+ 
 - Must use __powershell__ terminal not bash terminal if you get the error:
    _'C:\Program' is not recognized as an internal or external command, operable program or batch file._
 
