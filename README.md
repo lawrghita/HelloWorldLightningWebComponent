@@ -1,5 +1,6 @@
 # MY OBSERVATIONS :
- 
+- As I have two GitHub accounts I must modify __Control Panel\All Control Panel Items\Credential Manager\Edit Generic Credential__ in Windows to push into the correct account.
+
 - Must use __powershell__ terminal not bash terminal if you get the error:
    _'C:\Program' is not recognized as an internal or external command, operable program or batch file._
 
