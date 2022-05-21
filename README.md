@@ -7,6 +7,10 @@
 - Use: SELECT ... __WITH SECURITY_ENFORCED__ to get rid of the error:
    _Validate CRUD permission before SOQL/DML operation (rule: Security-ApexCRUDViolation)_
 
+- For deploying 
+   - __SFDX: Deploy Source to Org__ to main organisation
+   - __sfdx force:source:push__ to scrap organisation  
+
 - [__sfdx__ documentation](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
 - In powershell:
