@@ -11,6 +11,16 @@
    - __SFDX: Deploy Source to Org__ to main organisation
    - __sfdx force:source:push__ to scrap organisation  
 
+- If you cannot see Lightning page in home then in ...-meta.xml:
+   -     <isExposed>true</isExposed>
+            <targets>
+               <target>lightning__AppPage</target>
+               <target>lightning__RecordPage</target>
+               <target>lightning__HomePage</target>
+            </targets>
+
+- [__IDE on WEB for Lighting & all web languages__](https://webcomponents.dev)
+
 - [__sfdx__ documentation](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
 - In powershell:
