@@ -26,6 +26,8 @@
 - In powershell:
     - __sfdx force:data:soql:query -q "SELECT Id, Name, Account.Name FROM Contact"__
 
+- If a general __Retrieve Source from Org__ on force-app doesn't pull a specific file then just create an empty file with that name (example: AnimalsCalloutsTest.cls in classes folder) then call Retrieve Source from Org on that empty file and it will be replaced with the file from Salesforce ORG
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
