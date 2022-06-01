@@ -1,5 +1,4 @@
 @isTest
-// interface to intercept an http callout made by the salesforce
 global class AnimalsHttpCalloutMock implements System.HttpCalloutMock {
     global HTTPResponse respond(HTTPRequest request){
         HttpResponse response = new HttpResponse();
