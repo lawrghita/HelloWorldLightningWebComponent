@@ -1,6 +1,5 @@
 public class AnimalLocator{
     public static String getAnimalNameById(Integer animalID){
-        String name;
         Http http = new Http();
         HttpRequest request = new HttpRequest();
         request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals/'+animalID);
@@ -13,8 +12,25 @@ public class AnimalLocator{
             Map<String, Object> result = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
             Map<String, Object> animal = (Map<String, Object>) result.get('animal');
             return animal.get('name').toString();        
-        }else{
-            return '';
         }
+        return '';
     }
+    public static HttpResponse makePostLocator() {
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals/13');
+        request.setMethod('POST');
+        request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        request.setBody('{"name":"chicken13"}');
+        HttpResponse response = http.send(request);
+        // Parse the JSON response
+        if(response.getStatusCode() != 201) {
+            System.debug('The status code returned was not expected: ' +
+                response.getStatusCode() + ' ' + response.getStatus());
+        } else {
+            System.debug(response.getBody());
+        }
+        return response;
+    }   
+    
 }
