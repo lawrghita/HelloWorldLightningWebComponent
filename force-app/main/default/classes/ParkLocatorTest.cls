@@ -1,4 +1,3 @@
-@isTest
 @isTest private class ParkLocatorTest {
     @isTest static void testCallout() {              
     System.Test.setMock(WebServiceMock.class, new ParkServiceMock());
