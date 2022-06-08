@@ -1,3 +1,5 @@
+C:/Program Files/Java/jdk-17.0.3.1/bin
+
 # MY OBSERVATIONS :
 - As I have two GitHub accounts I must modify __Control Panel\All Control Panel Items\Credential Manager\Edit Generic Credential__ in Windows to push into the correct account.
 
