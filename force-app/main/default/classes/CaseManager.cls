@@ -32,12 +32,15 @@ global with sharing class CaseManager {
         return thisCase.Id;
     }
     @HttpPut
-    global static ID upsertCase(String subject, String status, String origin, String priority, String ID){
+    global static ID upsertCase(String id, String subject, String status, String origin, String priority){
         Case thisCase= new Case(Id = id, Subject = subject, Status = status, Origin = origin, Priority = priority); 
         //update or insert:
 		upsert thisCase;        
         return thisCase.Id;
     }
+
+    
+    
     @HttpPatch
     global static ID updateCaseFields(){
         RestRequest request = RestContext.request;
